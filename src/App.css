@@ -1,6 +1,10 @@
+body {
+  font-family: Arial;
+  background-color: #F6F1E9;
+}
+
 .page-container {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   min-height: 100vh;
-  font-family: Arial;
 }
