@@ -28,3 +28,5 @@ This project is licensed under the [MIT License](./LICENSE).
 **Oluwatunmise**
 
 - GitHub: [@0luwatunmise](https://github.com/0luwatunmise)
+
+- ## Try out the app @https://cv-builder-app-henna.vercel.app/
