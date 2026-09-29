@@ -8,7 +8,9 @@ export function Sidebar({
   setGeneralInfo,
   education,
   setEducation,
-  addExperience
+  addExperience,
+  handleReset,
+  handleDownload
 }) {
   return (
     <div className="info-bar">
@@ -17,7 +19,17 @@ export function Sidebar({
         setGeneralInfo={setGeneralInfo}
       />
       <Education education={education} setEducation={setEducation} />
-      <Experience addExperience={addExperience}  />
+      <Experience addExperience={addExperience} />
+
+      <div className="info-bar-footer">
+        <button type="button" className="download-btn" onClick={handleDownload}>
+          Download PDF
+        </button>
+
+        <button type="button" className="reset-btn" onClick={handleReset}>
+          Reset all data
+        </button>
+      </div>
     </div>
   );
 }

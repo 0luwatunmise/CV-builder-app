@@ -94,10 +94,10 @@ export function Experience({ addExperience }) {
 
       <button
         type="button"
-        className="update-button"
+        className="add-button"
         onClick={addResponsibility}
       >
-        Add
+        Add Responsibility
       </button>
 
       <div>

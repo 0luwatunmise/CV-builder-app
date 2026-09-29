@@ -1,10 +1,11 @@
 .info-bar {
+  position: relative;
   display: flex;
   flex-direction: column;
   color: white;
   background-color: rgb(28, 29, 31);
   flex: 0 0 300px;
-  padding: 20px 20px 25px 25px;
+  padding: 20px 20px 60px 25px;
   margin-left: 10px;
   border-radius: 20px;
   align-items: flex-start;
@@ -20,6 +21,7 @@
   cursor: pointer;
   margin-bottom: 10px;
   margin-top: 10px;
+  width: 100%;
 }
 .chevron {
   display: inline-block;
@@ -68,6 +70,7 @@
   height: 100px;
   border-radius: 10px;
   padding: 10px 10px 5px 5px;
+  margin-bottom: 5px;
   font-size: 14px;
   border: none;
   font-family: inherit;
@@ -77,6 +80,22 @@
 .input-element-desc:focus {
   outline: none;
 }
+
+.add-button{
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 13px;
+  cursor: pointer;
+  width: 120px;
+  margin-bottom: 10px;
+  
+
+}
+.add-button:hover{
+  text-decoration: underline;
+}
+
 
 .study-year-container {
   display: flex;
@@ -105,16 +124,59 @@
   outline: none;
 }
 
+
+
 .update-button {
+  background: #c1613d;
+  color: white;
   width: 60px;
-  padding: 8px;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 12px;
   margin-top: 5px;
+  margin-bottom: 15px;
   border-radius: 6px;
   border: none;
-  font-size: 12px;
   cursor: pointer;
 }
 .update-button:active {
   margin-left: 2px;
   margin-top: 6px;
+}
+
+.info-bar-footer {
+  position: absolute;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+   bottom: 20px;
+  left: 15%;
+  gap: 15px;
+}
+.download-btn {
+  background: #c1613d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+}
+.download-btn:active {
+  margin-left: 2px;
+  margin-bottom: -3px;
+}
+
+.reset-btn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 12px;
+  cursor: pointer;
+  padding: 10px;
+}
+.reset-btn:hover{
+  text-decoration: underline;
 }
