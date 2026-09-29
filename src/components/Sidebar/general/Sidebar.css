@@ -1,8 +1,8 @@
-.info-bar{
+.info-bar {
   display: flex;
   flex-direction: column;
   color: white;
-  background-color: rgb(28,29,31);
+  background-color: rgb(28, 29, 31);
   flex: 0 0 300px;
   padding: 20px 20px 25px 25px;
   margin-left: 10px;
@@ -11,7 +11,7 @@
   justify-content: center;
 }
 
-.section-header{
+.section-header {
   font-size: 25px;
   font-weight: 500;
   display: flex;
@@ -27,7 +27,7 @@
   transition: transform 0.2s ease;
 }
 .chevron.open {
-  transform: rotate(90deg); 
+  transform: rotate(90deg);
 }
 
 .section-content {
@@ -35,7 +35,9 @@
   flex-direction: column;
   overflow: hidden;
   max-height: 1000px;
-  transition: max-height 0.25s ease, opacity 0.2s ease;
+  transition:
+    max-height 0.25s ease,
+    opacity 0.2s ease;
   opacity: 1;
 }
 .section-content.collapsed {
@@ -48,7 +50,7 @@
   margin-bottom: 8px;
   cursor: pointer;
 }
-.input-description:hover{
+.input-description:hover {
   text-decoration: underline;
 }
 
@@ -58,11 +60,11 @@
   border: none;
   border-radius: 6px;
 }
-.input-element:focus{
+.input-element:focus {
   outline: none;
 }
 
-.input-element-desc{
+.input-element-desc {
   height: 100px;
   border-radius: 10px;
   padding: 10px 10px 5px 5px;
@@ -72,39 +74,38 @@
   font-size: inherit;
 }
 
-.input-element-desc:focus{
+.input-element-desc:focus {
   outline: none;
 }
 
-.study-year-container{
+.study-year-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-size: 14px;
-  
 }
 
-.from{
- margin-bottom: 5px;
- font-size: 12px;
+.from {
+  margin-bottom: 5px;
+  font-size: 12px;
 }
-.to{
- margin-bottom: 5px;
- margin-top: 8px;
- font-size: 12px;
+.to {
+  margin-bottom: 5px;
+  margin-top: 8px;
+  font-size: 12px;
 }
-.date-input{
+.date-input {
   margin-bottom: 10px;
   padding: 10px 10px 5px 5px;
   width: 100px;
   border: none;
   border-radius: 6px;
 }
-.date-input:focus{
+.date-input:focus {
   outline: none;
 }
 
-.update-button{
+.update-button {
   width: 60px;
   padding: 8px;
   margin-top: 5px;
@@ -113,7 +114,7 @@
   font-size: 12px;
   cursor: pointer;
 }
-.update-button:active{
+.update-button:active {
   margin-left: 2px;
   margin-top: 6px;
 }

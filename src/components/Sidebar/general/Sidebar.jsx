@@ -8,6 +8,7 @@ export function Sidebar({
   setGeneralInfo,
   education,
   setEducation,
+  addExperience
 }) {
   return (
     <div className="info-bar">
@@ -16,7 +17,7 @@ export function Sidebar({
         setGeneralInfo={setGeneralInfo}
       />
       <Education education={education} setEducation={setEducation} />
-      <Experience />
+      <Experience addExperience={addExperience}  />
     </div>
   );
 }
