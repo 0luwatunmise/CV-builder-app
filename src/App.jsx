@@ -86,6 +86,14 @@ function App() {
         filename: "my-cv.pdf",
         html2canvas: { scale: 2 },
         jsPDF: { format: "a4" },
+        pagebreak: {
+          mode: ["css", "legacy"],
+          avoid: [
+            ".experience-info-container",
+            ".education-info-container",
+            "li",
+          ],
+        },
       })
       .from(cvRef.current)
       .save();
