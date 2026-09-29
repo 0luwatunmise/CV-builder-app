@@ -7,18 +7,19 @@ export function Experience() {
 
       <div className="experience-info-container">
         <div>
-          <p className="company-name">GENERIC LTD</p>
-          <p className="role">Software developer</p>
+          <p className="role">JUNIOR DEV</p>
+          <p className="company-name">Generic Hub</p>
 
           <div className="responsibilities">
-            <div>Responsibilities</div>
-             <div></div>
-
-
+            <ul>
+              <li>Designed working systems</li>
+              <li>Maintained existing systems</li>
+              <li>Buit cool stuff</li>
+            </ul>
           </div>
         </div>
 
-        <div className="year">2002 - 2005</div>
+        <div className="experience-year">Jun 2002 - Aug 2005</div>
       </div>
     </div>
   );

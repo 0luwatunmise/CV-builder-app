@@ -1,6 +1,7 @@
 import "./GeneralInformation.css";
 
 export function GeneralInformation({ generalInfo }) {
+  const photo = generalInfo.photo;
   return (
     <div className="general-info-container">
       <div className="general-info">
@@ -20,13 +21,10 @@ export function GeneralInformation({ generalInfo }) {
         </p>
       </div>
 
-      <div className="info-photo"></div>
-
-      <div className="other-info">
-        <div>{generalInfo.email || "yourname@gmail.com"}</div>
-        <div>{generalInfo.location || "City, State"}</div>
-        <div>{generalInfo.phone || "+234 000 000 000"}</div>
-      </div>
+      <div
+        className="info-photo"
+        style={photo ? { backgroundImage: `url(${photo})` } : undefined}
+      ></div>
     </div>
   );
 }

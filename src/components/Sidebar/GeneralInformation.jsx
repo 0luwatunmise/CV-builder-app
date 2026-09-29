@@ -4,7 +4,13 @@ export function GeneralInformation({ generalInfo, setGeneralInfo }) {
   const handleChange = (param) => (event) => {
     const value = event.target.value;
     setGeneralInfo({ ...generalInfo, [param]: value });
-    console.log(value);
+  };
+
+  const handlePhotoChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      setGeneralInfo({ ...generalInfo, photo: URL.createObjectURL(file) });
+    }
   };
 
   return (
@@ -39,7 +45,12 @@ export function GeneralInformation({ generalInfo, setGeneralInfo }) {
       <p>
         <label className="input-description">
           Upload profile image
-          <input type="file" accept="image/*" hidden />
+          <input
+            type="file"
+            accept="image/*"
+            hidden
+            onChange={handlePhotoChange}
+          />
         </label>
       </p>
 

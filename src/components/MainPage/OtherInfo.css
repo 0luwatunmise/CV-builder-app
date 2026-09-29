@@ -1,0 +1,13 @@
+.other-info{
+  display: flex;
+  width: 550px;
+  border:none;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #4a463f;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid black;
+}

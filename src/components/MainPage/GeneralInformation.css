@@ -1,7 +1,6 @@
-.general-info-container{
+.general-info-container {
   display: grid;
-  width: 600px;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
 
@@ -23,6 +22,7 @@
   line-height: 1.05;
   font-weight: 600;
   margin: 0 0 8px;
+  margin-right: 10px;
   text-transform: uppercase;
 }
 
@@ -41,25 +41,14 @@
   color: #4a463f;
   margin-bottom: 20px;
   max-width: 300px;
+  overflow-wrap: break-word;
 }
 
 .info-photo {
   background-color: #c1613d;
-  width: 280px;
-  height: 280px;
+  background-size: cover;
+  background-position: center;
+  width: 200px;
+  height: 200px;
   border-radius: 280px;
-}
-
-.other-info{
-  display: flex;
-  width: 550px;
-  border:none;
-  align-items: center;
-  justify-content: space-evenly;
-  color: #4a463f;
-  font-size: 14px;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  margin-bottom: 5px;
-  border-bottom: 1px solid black;
 }

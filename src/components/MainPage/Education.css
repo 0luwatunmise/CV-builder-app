@@ -20,6 +20,8 @@
   justify-content: space-between;
   align-items: center;
 }
+
+
 .degree {
   font-weight: 600;
   font-size: 14px;
@@ -28,13 +30,36 @@
   letter-spacing: 0.5px;
 }
 .institution {
+  font-weight: 600;
   font-size: 13px;
   margin-bottom: 10;
   margin-top: 0px;
   letter-spacing: 0.5px;
+  text-transform: capitalize;
 }
-.year {
+
+.education-year {
   font-weight: 550;
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 0.5px;
+  margin-left: auto;
+  text-transform: capitalize;
+}
+
+.delete-entry {
+  background: none;
+  border: none;
+  color: #6f6b63;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  opacity: 0;
+  transition:
+    opacity 0.15s ease,
+    color 0.15s ease;
+}
+
+.education-info-container:hover .delete-entry {
+  opacity: 1;
 }
